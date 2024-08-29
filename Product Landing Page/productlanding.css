@@ -1,0 +1,302 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+  background-color: rgb(226, 226, 219);
+}
+
+/* HEADER */
+#nav-bar {
+  width: 100%;
+  height: 16%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  background-color: rgb(241, 131, 131);
+  position: fixed;
+  padding: 0 20px;
+  align-items: center;
+  border-bottom: 3px solid grey;
+  z-index: 1;
+}
+.left-section{
+width: 20%;
+}
+#header-img {
+width: 50%;
+height: 70px;
+}
+.right-section {
+width: 50%;
+display: flex;
+flex-direction: row;
+justify-content: space-between;
+}
+.nav-link {
+  font-size: 27px;
+  color: inherit;
+  text-decoration: none;
+  letter-spacing: 1px;
+}
+.nav-link:hover {
+  color: white;
+  text-decoration: underline;
+}
+
+/* HOME */
+.home-description {
+  position: absolute;
+  font-size: 80px;
+  top: 90px;
+  left: 25%;
+  background-color: rgb(109, 109, 235);
+  color: white;
+  padding: 0 15px 10px 15px;
+}
+.home-img {
+  width: 100%;
+  height: 70ch;
+  padding-top: 77px;
+  margin-bottom: 50px;
+}
+
+/* FEATURES */
+.features-container {
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+.features {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 40px;
+}
+.features img {
+  width: 90%;
+  height: 100%;
+  border-radius: 40px;
+}
+.features-description {
+  width: 100%;
+  height: 40%;
+  font-size: 25px;
+  margin: 10% auto ;
+}
+
+/* PERFORMANCE */
+.video-section {
+  width: 70%;
+  margin: 0 auto;
+}
+#video {
+  width: 100%;
+  height: 15cm;
+  border-radius: 20px;
+}
+
+/* CAR FOR SALE */
+.sales-car-container {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  gap: 1rem;
+  padding: 40px;
+}
+.sales-car {
+  width: 100%;
+  height: 300px;
+  display: grid;
+  padding: 10px;
+  background-color: rgb(241, 237, 237);
+  border-radius: 10px;
+}
+.cars img {
+  width: 100%;
+  height: 100%;
+  border-radius: 8px;
+}
+.brand-name {
+  font-size: 14px;
+}
+.shop-now a {
+  color: inherit;
+  font-weight: bold;
+  font-size: 14px;
+  text-decoration: none;
+}
+.shop-now a:hover {
+  color: blue;
+  text-decoration: underline;
+  text-decoration-thickness: 2px;
+}
+
+/* FORM */
+#form{
+  width: 40%;
+  margin: 5% auto ;
+  text-align: center;
+}
+label {
+  font-size: 30px;
+}
+#email {
+  width: 80%;
+  height: 50px;
+  font-family: Montserrat;
+  font-size: 19px;
+  text-align: center;
+  border-radius: 8px;
+  border: 2px solid rgb(223, 212, 212);
+  margin-top: 20px;
+}
+#submit {
+  width: 30%;
+  margin: 5% auto;
+  font-family: Montserrat;
+  color : inherit;
+  font-size: 20px;
+  background-color: #f18383;
+  border: none;
+  border-radius: 3px;
+  padding: 10px;
+  cursor: pointer;
+}
+#submit:hover {
+  background-color: #e77777;
+  color: white;
+}
+
+/* FOOTER */
+footer {
+  background-color: black;
+  color:grey;
+  text-align: end;
+  padding: 1px 20px;
+  font-size: 12px;
+}
+
+
+@media screen and (min-width: 516px) {
+  .left-section {
+    width: 50%;
+  }
+  .right-section {
+    flex-direction: column;
+    width: 30%;
+  }
+  .nav-link {
+    font-size: 16px;
+  }
+  .home-description {
+    font-size: 40px;
+    top: 140px;
+    left: 10%;
+  }
+  .features-description {
+    height: 120px;
+    font-size: 18px;
+  }
+  #video {
+    height: 10cm;
+  }
+  .sales-car-container {
+    grid-template-columns: 1fr 1fr;
+  }
+  .sales-car {
+    height: 250px;
+  }
+  .cars img {
+    height: 3.5cm;
+  }
+  #form{
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 685px) {
+  .left-section {
+    width: 40%;
+  }
+  .right-section {
+    width: 60%;
+    flex-direction: row;
+  }
+  .home-description {
+    font-size: 50px;
+    top: 120px;
+    left: 15%;
+  }
+  .features-description {
+    height: 130px;
+    font-size: 21px;
+  }
+  #video {
+    height: 13cm;
+  }
+  .sales-car-container {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .sales-car {
+    height: 300px;
+  }
+  .cars img {
+    height: 4cm;
+  }
+}
+
+@media screen and (min-width: 964px) {
+  .left-section{
+    width: 30%;
+  }
+  .right-section {
+    width: 60%;
+    flex-direction: row;
+  }
+  .nav-link {
+    font-size: 20px;
+  }
+  .home-description {
+    font-size: 70px;
+    top: 90px;
+  }
+  .features-description {
+    height: 140px;
+    font-size: 25px;
+  }
+  .sales-car-container {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .sales-car {
+    height: 300px;
+  }
+  .cars img {
+    height: 4cm;
+  }
+  #form {
+    width: 60%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .left-section{
+    width: 20%;
+  }
+  .nav-link {
+    font-size: 30px;
+  }
+  .home-description {
+    font-size: 80px;
+    top: 80px;
+    left: 20%;
+  }
+  .sales-car-container {
+grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  }
+  form {
+    width: 40%;
+  }
+}
